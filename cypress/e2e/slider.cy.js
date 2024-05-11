@@ -16,3 +16,17 @@ describe('Swiper Gallery Test', function () {
     cy.get('.swiper-slide-active').should('contain', 'Paris');
   });
 });
+
+describe('Swiper Gallery Test', function () {
+  it('Checks if right navigation button is not disabled"', function () {
+    cy.visit('http://localhost:3000');
+    cy.get('.swiper-button-next').should('not.be.disabled');
+  });
+});
+
+describe('Swiper Gallery Test', function () {
+  it('Checks if left navigation button is not disabled"', function () {
+    cy.visit('http://localhost:3000');
+    cy.get('.swiper-button-prev').should('not.be.disabled');
+  });
+});
